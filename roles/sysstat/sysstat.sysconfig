@@ -1,0 +1,16 @@
+#
+# This file is managed by SaltStack
+# see: /srv/salt/roles/sysstat
+#
+# /etc/sysconfig/sysstat
+HISTORY=28
+
+# Compress (using gzip or bzip2) sa and sar files older than (in days):
+COMPRESSAFTER=31
+
+# Parameters for the system activity data collector (see sadc manual page)
+# which are used for the generation of log files.
+SADC_OPTIONS="-S DISK"
+
+# Compression program to use.
+ZIP="bzip2"
