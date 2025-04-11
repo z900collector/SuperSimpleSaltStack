@@ -1,0 +1,11 @@
+#
+# This file is managed by SaltStack
+# See: /srv/salt/roles/sysstat
+#
+# Run system activity accounting tool every 1 minute
+#
+* * * * * root /usr/lib64/sa/sa1 1 1 > /dev/null 2>&1
+#
+# Generate a daily summary of process accounting at 23:55
+#
+55 23 * * * root /usr/lib64/sa/sa2 -A  > /dev/null 2>&1
